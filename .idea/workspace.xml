@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="221077ad-7b76-4063-a1df-e935fc20e1b4" name="Changes" comment="1152번/단어의 개수/브론즈2">
+      <change afterPath="$PROJECT_DIR$/algorithm/algorithm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/out/production/algorithm/Q10809.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/out/production/algorithm/Q11720.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/out/production/algorithm/Q2675.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/bronze/Q11654.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/bronze/Q11720.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/bronze/Q2743.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/bronze/Q9086.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/out/production/algorithm/Q11654.class" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/out/production/algorithm/Q11654.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/algorithm" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2WEcIuhfUQJ9nfSw3IQXc4hPpFB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Merging master",
+    "last_opened_file_path": "C:/java-baekjoon/baekjoon",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="221077ad-7b76-4063-a1df-e935fc20e1b4" name="Changes" comment="" />
+      <created>1696301104139</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696301104139</updated>
+      <workItem from="1696301105167" duration="4399000" />
+      <workItem from="1696347376916" duration="3327000" />
+    </task>
+    <task id="LOCAL-00001" summary="2675번/문자열 반복/브론즈2">
+      <option name="closed" value="true" />
+      <created>1696326187204</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696326187204</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1152번/단어의 개수/브론즈2">
+      <option name="closed" value="true" />
+      <created>1696351785758</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696351785758</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2675번/문자열 반복/브론즈2" />
+    <MESSAGE value="1152번/단어의 개수/브론즈2" />
+    <option name="LAST_COMMIT_MESSAGE" value="1152번/단어의 개수/브론즈2" />
+  </component>
+</project>
