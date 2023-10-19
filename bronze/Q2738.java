@@ -34,7 +34,5 @@ public class Q2738 {
                     System.out.println();
             }
         }
-
-
     }
 }
