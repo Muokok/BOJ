@@ -16,7 +16,7 @@ public class Q2566 {
                 arr[row][col] = scan.nextInt();
                 if(arr[row][col] > max){
                     max = arr[row][col];
-                    //max_row = row + 1; 이렇게 하면 틀림
+                    //max_row = row + 1; //이렇게 하면 틀림 >> 전부 다 0일 때 행,열이 0 0 이 출력되므로
                     //max_col = col + 1;
                     max_row = row;
                     max_col = col;
@@ -27,5 +27,6 @@ public class Q2566 {
         }
         System.out.println(max);
         System.out.printf("%d %d",max_row + 1,max_col + 1);
+         //System.out.printf("%d %d",max_row,max_col); //이렇게 하면 틀림 >> 전부 다 0일 때 행,열이 0 0 이 출력되므로
     }
 }
