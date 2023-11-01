@@ -16,29 +16,29 @@ public class Q1193 {
          */
 
         int X = scan.nextInt();
-        int diagonalnum = 1; // 대각선 당 최대 숫자 번호
-        int diagonal =2 ; // 몇 번째 대각선인지
-        String result;
+        int diagonalnum = 1; // 대각선 당 최소 숫자 번호
+        int diagonal =1 ; // 몇 번째 대각선인지
+        String result="";
 
-        while (true){
-            if(X<= diagonalnum){
-                int diagonalPerIndex = diagonalnum - X + diagonal;// ex: X가 17이라면 6번째 대각선의 2번째 값까지 반복한다 >> 6 -(21-17)
-
-                if((diagonal % 2) != 0) { // 홀수라면
-                    result = (diagonal-diagonalPerIndex+1) + "/"+ diagonalPerIndex;
-                }
-                else {// 짝수라면
-                    result = diagonalPerIndex+ "/"+ (diagonal-diagonalPerIndex+1);
-                }
-                break;
-            }
+        while (X >= diagonalnum + diagonal){
 
             diagonalnum = diagonalnum +diagonal;
             diagonal++;
-            System.out.println(diagonalnum);
-            System.out.println(diagonal);
+
+            //System.out.println("diagonalnum >> "+diagonalnum);
+            //System.out.println("diagonal >> "+diagonal);
+        }
+        int diagonalPerIndex = X - diagonalnum; // 한 대각선의 X의 index (0,1,2~)
+        //System.out.println("diagonalPerIndex >> "+diagonalPerIndex);
+
+        if((diagonal % 2) != 0) { // 홀수라면
+            result =  (diagonal-diagonalPerIndex)+ "/"+(diagonalPerIndex+1) ;
 
         }
+        else {// 짝수라면
+            result =  (diagonalPerIndex+1)+ "/"+(diagonal-diagonalPerIndex);
+        }
+
         System.out.println(result);
     }
 }
