@@ -3,12 +3,11 @@ package silver;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Scanner;
 
 public class Q2667 {
 
     static int arr[][];
-    static boolean visit[][];
+    static boolean visit[][];// boolean형 배열을 처음에 만들면 모두 false값으로 초기화 되어있다
     static int dirX[] = {0, 0, -1, 1};
     static int dirY[] = {-1, 1, 0, 0};
     static int count = 0, number = 0;
