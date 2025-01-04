@@ -2,7 +2,7 @@ package silver;
 
 import java.io.*;
 
-public class Q18258 {
+public class Q18258 { // 큐 2
     static class CircularQueue{ // 시간초과 나서 원형큐로 변경
         private int [] queue;
         private int capacity;
