@@ -7,6 +7,7 @@ import java.util.*;
 public class Q1158 { //요세푸스 문제
 
     /* 잘못된 코드*/
+// 이렇게 하려는 이유: 배열의 특정 인덱스를 삭제하고 땡겨오는 과정을 없애고 싶었음
 //    static class CircularQueue{
 //        int capacity;
 //        int jump;
