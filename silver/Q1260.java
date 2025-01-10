@@ -4,74 +4,64 @@ import java.util.*;
 import java.io.*;
 
 public class Q1260 {
-    static int Edge_arr[][]; // 간선 체크 배열, 즉 노드 간 연결이 되어 있는지 체크
-    static boolean Node_arr[]; // 노드 체크 배열
-    static int N;
-    static int M;
-    static int V;
-    static int count;
-    static Queue<Integer> que = new LinkedList<>();
+    static int [][] graph = new int[1001][1001];
+    static boolean [] visited;
+    static int n;
+    static int m;
 
-    public static void BFS(int start) {
-        que.offer(start);
-        Node_arr[start] = true;
-        System.out.print(start + " "); // BFS 결과 출력
+    static void dfs(boolean [] visited, int v){
+        visited[v] = true;
+        System.out.print(v + " ");
 
-        while( !que.isEmpty() ) {
-            start = que.poll();
+        for(int i=1; i<=n; i++){ // 여기는 어디까지 돌아야 하는지?????
+            if(graph[v][i] == 1 && !visited[i]){
+                dfs(visited, i);
+            }
+        }
+    }
 
-            for(int i=1; i<=N; i++) {
+    static void bfs(boolean [] visited, int v){
+        Queue<Integer> q = new LinkedList<>();
+        q.offer(v);
+        visited[v] = true;
 
-                if(Edge_arr[start][i] == 1 && Node_arr[i] == false) {
-                    que.offer(i);
-                    Node_arr[i] = true;
-                    System.out.print(i + " ");
+        while(!q.isEmpty()){
+            int x = q.poll();
+            System.out.print(x + " ");
+
+            for(int i=1; i<=n; i++){
+                if(graph[x][i] == 1 && !visited[i]){
+                    q.offer(i);
+                    visited[i] = true;
                 }
             }
         }
     }
 
-    public static void DFS(int start) {
-        Node_arr[start] = true; // start 노드를 방문
-        System.out.print(start + " "); // DFS 결과 한개씩 출력
-
-        if(count == N) {
-            return;
-        }
-        count ++;
-
-        for(int i=1; i<=N; i++) {
-            if(Edge_arr[start][i] == 1 && Node_arr[i] == false) {
-                DFS(i);
-            }
-        }
-    }
-
-    public static void main(String[] args) throws Exception {
+    public static void main(String [] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = null;
 
-        st = new StringTokenizer(br.readLine());
-        N = Integer.parseInt(st.nextToken());
-        M = Integer.parseInt(st.nextToken());
-        V = Integer.parseInt(st.nextToken());
+        String [] NMV = br.readLine().split(" ");
 
-        Edge_arr = new int[1001][1001];
-        Node_arr = new boolean[1001];
+        n = Integer.parseInt(NMV[0]);
+        m = Integer.parseInt(NMV[1]);
+        int v = Integer.parseInt(NMV[2]);
 
-        for(int i=0; i<M; i++) {
-            st = new StringTokenizer(br.readLine());
-            int x = Integer.parseInt(st.nextToken());
-            int y = Integer.parseInt(st.nextToken());
 
-            Edge_arr[x][y] = Edge_arr[y][x] = 1; // 노드 간 연결되어 있으면 1
+        visited = new boolean[n+1];
+
+        for(int i=0; i<m; i++){
+            String [] input = br.readLine().split(" ");
+            int x = Integer.parseInt(input[0]);
+            int y = Integer.parseInt(input[1]);
+            graph[x][y] = 1;
+            graph[y][x] = 1;
         }
 
-        DFS(V);
+        dfs(visited, v);
         System.out.println();
 
-        Node_arr = new boolean[1001];
-        BFS(V);
-
+        visited = new boolean[n+1];
+        bfs(visited, v);
     }
 }
