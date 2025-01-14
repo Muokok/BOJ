@@ -1,7 +1,9 @@
+package silver;
+
 import java.io.*;
 import java.util.*;
 
-public class Q2667 {
+public class Q2667_2 {
     static int [][] graph;
     static boolean [][] visited;
     static int N;
