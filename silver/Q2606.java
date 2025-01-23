@@ -1,3 +1,5 @@
+package silver;
+
 import java.util.*;
 
 public class Q2606 { // 바이러스
