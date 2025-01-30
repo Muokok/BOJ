@@ -34,7 +34,7 @@ public class Q1620 {
             * */
 
             if(isNumberic(quest)){ // String인지 확인하는 이 부분이 헷갈렷음
-                bw.write(numToStr.get(Integer.parseInt(quest)) + "\n");
+                bw.write(numToStr.get(Integer.parseInt(quest) - 1) + "\n");
             }else{
                 bw.write((strToNum.get(quest) + 1) + "\n");
             }
