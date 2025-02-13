@@ -1,6 +1,8 @@
+package silver;
+
 import java.util.*;
 
-public class Q2839 {
+public class Q2839_2 {
 
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
