@@ -1,0 +1,9 @@
+SELECT I.NAME, I.DATETIME
+FROM ANIMAL_INS I
+         LEFT JOIN ANIMAL_OUTS O
+                   ON I.ANIMAL_ID = O.ANIMAL_ID
+WHERE O.ANIMAL_ID IS NULL
+ORDER BY DATETIME ASC
+    LIMIT 3;
+
+# LEFT JOIN -> 왼쪽 테이블의 내용은 모두 출력되어야 한다 로 생각하면 좋다.
